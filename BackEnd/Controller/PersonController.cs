@@ -2,11 +2,9 @@
 using BackEnd.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace BackEnd.Controller
 {
-
     [ApiController]
     [Route("api/[controller]")]
     public class PersonController : ControllerBase
@@ -51,7 +49,7 @@ namespace BackEnd.Controller
             }
         }
 
-        [HttpPut("{id}")]// this update existing person
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdatePerson(int id, Person updatedPerson)
         {
             if (id != updatedPerson.Id)
@@ -87,5 +85,24 @@ namespace BackEnd.Controller
             return NoContent();
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePerson(int id)
+        {
+            var person = await _dbContext.People.FindAsync(id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+
+            _dbContext.People.Remove(person);
+            await _dbContext.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool PersonExists(int id)
+        {
+            return _dbContext.People.Any(p => p.Id == id);
+        }
     }
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wC5+ZM9G8zKnnHxuGou4DH7P148hTwGQB/GIb/QeBgs=",
+  "Source": "SignIn.api",
+  "BasePath": "_content/SignIn.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd", "BackEnd.csproj", "{A8DC0CC9-5E5B-42B7-8185-23A89BBB430D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignIn.api", "..\SignIn.api\SignIn.api.csproj", "{BB1C3A58-9E0F-4574-AE61-268C95C7ED0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Data", "..\Project.Data\Project.Data.csproj", "{F3DD4158-C4E8-4BCC-95A6-ED65E947C14F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8DC0CC9-5E5B-42B7-8185-23A89BBB430D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8DC0CC9-5E5B-42B7-8185-23A89BBB430D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8DC0CC9-5E5B-42B7-8185-23A89BBB430D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8DC0CC9-5E5B-42B7-8185-23A89BBB430D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1C3A58-9E0F-4574-AE61-268C95C7ED0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1C3A58-9E0F-4574-AE61-268C95C7ED0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1C3A58-9E0F-4574-AE61-268C95C7ED0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1C3A58-9E0F-4574-AE61-268C95C7ED0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3DD4158-C4E8-4BCC-95A6-ED65E947C14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DD4158-C4E8-4BCC-95A6-ED65E947C14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DD4158-C4E8-4BCC-95A6-ED65E947C14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DD4158-C4E8-4BCC-95A6-ED65E947C14F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
